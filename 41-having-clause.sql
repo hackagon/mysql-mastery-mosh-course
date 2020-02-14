@@ -6,4 +6,4 @@ SELECT
   COUNT(*) AS number_of_voices
 FROM invoices
 GROUP BY client_id
-HAVING total_sales > 500;
+HAVING total_sales > 500 AND number_of_voices > 5;
